@@ -23,6 +23,7 @@ io.on("connection",(socket)=>{
        console.log(msg)
         socket.broadcast.emit('message', msg);
         
+        
     })
 
     socket.on("disconnect", ()=>{
